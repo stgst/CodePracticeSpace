@@ -1,5 +1,6 @@
  
 #include<iostream>  
+#include<algorithm>
   
 using namespace std; 
    
@@ -25,6 +26,9 @@ int main()
         continue;
       }
     }
+    
+    sort(B+1,B + 1 + bsize);
+    
     for(int i=1;i <= bsize;i++){
       cout << B[i] << " ";
     }
